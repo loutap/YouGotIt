@@ -1,0 +1,32 @@
+[2026-01-22 15:17:25] Application started. Version: v2.0
+[2026-01-22 15:17:32] Starting download for URL: https://www.youtube.com/watch?v=YIhzUnvi7Fw
+[2026-01-22 15:17:36] Error downloading https://www.youtube.com/watch?v=YIhzUnvi7Fw: [0;31mERROR:[0m You have requested merging of multiple formats but ffmpeg is not installed. Aborting due to --abort-on-error
+[2026-01-22 15:19:08] Application started. Version: v2.0
+[2026-01-22 15:19:38] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:25:17] Application started. Version: v2.0
+[2026-01-22 15:25:25] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:25:43] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:27:44] Application started. Version: v2.0
+[2026-01-22 15:27:53] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:30:37] Application started. Version: v2.0
+[2026-01-22 15:30:43] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:31:28] Application started. Version: v2.0
+[2026-01-22 15:33:34] Application started. Version: v2.0
+[2026-01-22 15:33:39] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:34:40] Application started. Version: v2.0
+[2026-01-22 15:34:48] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:38:25] Application started. Version: v2.0
+[2026-01-22 15:38:33] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:41:44] Application started. Version: v2.0
+[2026-01-22 15:41:49] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:41:53] Error downloading https://www.youtube.com/shorts/5GqfmmAQhQw: [0;31mERROR:[0m The downloaded file is empty
+[2026-01-22 15:45:50] Application started. Version: v2.1
+[2026-01-22 15:46:17] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:46:21] Primary download failed. Retrying with Safe Mode (Reliable HTTP format)...
+[2026-01-22 15:48:37] Application started. Version: v2.1
+[2026-01-22 15:48:42] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:51:05] Application started. Version: v2.1
+[2026-01-22 15:51:11] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
+[2026-01-22 15:51:14] User requested application exit via Cancel.
+[2026-01-22 15:51:18] Application started. Version: v2.1
+[2026-01-22 15:51:22] Starting download for URL: https://www.youtube.com/shorts/5GqfmmAQhQw
