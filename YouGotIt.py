@@ -4,6 +4,7 @@ import re
 import tkinter as tk
 from tkinter import filedialog
 import customtkinter as ctk
+from PIL import Image
 import yt_dlp
 import datetime
 import sys
@@ -12,7 +13,7 @@ import subprocess
 # Python app that lets you download a YouTube Video
 # Refactored and Optimized (using yt-dlp)
 # Version 2.0 with Logging and File Opening
-Version = 'v2.1'
+Version = 'v2.2'
 LOG_FILE = "YouGotIt.log"
 
 class YouTubeDownloaderApp(ctk.CTk):
@@ -21,6 +22,13 @@ class YouTubeDownloaderApp(ctk.CTk):
 
         self.title('YouGotIt! - YouTube Downloader')
         self.geometry('720x800')
+
+        # Set Logo
+        try:
+            logo_path = os.path.join(os.path.dirname(__file__), "YouGotIt_logo_trans.png")
+            self.iconphoto(False, tk.PhotoImage(file=logo_path))
+        except Exception as e:
+            print(f"Error loading logo: {e}")
         
         # Set appearance
         ctk.set_appearance_mode("Dark")
@@ -52,7 +60,19 @@ class YouTubeDownloaderApp(ctk.CTk):
 
     def create_widgets(self):
         # Title
-        self.title_label = ctk.CTkLabel(self, text="YouGotIt!", font=("Helvetica", 44), text_color="#de626e")
+        try:
+            logo_path = os.path.join(os.path.dirname(__file__), "YouGotIt_logo_trans.png")
+            pil_img = Image.open(logo_path)
+            w, h = pil_img.size
+            target_h = 100
+            target_w = int(w * (target_h / h))
+            
+            logo_image = ctk.CTkImage(light_image=pil_img, dark_image=pil_img, size=(target_w, target_h))
+            self.title_label = ctk.CTkLabel(self, text="", image=logo_image)
+        except Exception as e:
+            print(f"Error loading title logo: {e}")
+            self.title_label = ctk.CTkLabel(self, text="YouGotIt!", font=("Helvetica", 44), text_color="#de626e")
+            
         self.title_label.pack(pady=5)
         
         self.subtitle_label = ctk.CTkLabel(self, text="Download any YouTube Video", font=("Verdana", 16), text_color="#afd5de")
